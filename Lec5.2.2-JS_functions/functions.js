@@ -44,3 +44,20 @@ console.log('new_area(4)', new_area(4))
 
 
 //we can use let or var to declare variables but let is preferred as var is an old way
+let a = 123
+let b = 'hello'
+console.log(a)
+console.log(b)
+
+function hello(){
+    return 'Hello World'
+    // console.log("Hello World")
+}
+console.log(hello())
+
+//if a function doesn't take any arguments and we want to pass arguments then we can use 'arguments' attribute followed by number of argument to print like argument[0] + argument[1] will print first two arguments passed inside function
+function print_hi(){
+    console.log("Hi" +  arguments[0] + arguments[1])
+}
+print_hi(2,3)
+print_hi('shivansh', 'kush')
