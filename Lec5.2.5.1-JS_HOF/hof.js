@@ -24,18 +24,17 @@ greeter('Good Morning')
 // g1('shivansh')
 
 
-
-
+//another example
 function hello(greet){
     function to(name){
         function surname(second_name){
-            console.log(greet, name, second_name)
+            console.log(greet, name, second_name);
         }
-        return surname('kush')
+        return surname('kush');
     }
-    return to('shivansh')
+    return to('shivansh');
 }
-hello('Hi')
+hello('Hi');
 
 
 

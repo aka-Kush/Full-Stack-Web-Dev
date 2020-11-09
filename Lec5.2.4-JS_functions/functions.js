@@ -1,4 +1,5 @@
 //function can be defined using the following syntax:
+//Function Declaration   //Hoisting Works (Described later)
 function alpha() {
     return "A"
 }
@@ -7,6 +8,7 @@ console.log(alpha())
 
 //another way of defining function
 //the problem of using let for defining function is if you call function before defining it, it will throw Reference error ; whereas in case of function() it is completely fine
+//Function Expression   //Hoisting Works 
 let gamma = function() {
     return "C"
 }
@@ -61,3 +63,28 @@ function print_hi(){
 }
 print_hi(2,3)
 print_hi('shivansh', 'kush')
+
+
+//A closure is a function having access to the parent scope, even after the parent function has closed.
+//function inside a function
+function outer(arg1){
+    let var1 = 10;
+    let x = 30;
+    console.log(arguments[0]);          //arguments keyword is used to fetch any passed argument in the function ; here the argument will be param1
+    function inner(arg2){
+        let var2 = 20;
+        let x = 40;
+        console.log(arg1, var1, arg2, var2, x);    //inner x will be printed as it will shadow outer x
+    }
+    return inner;
+}
+let x = outer('param1');        //x is a variable which stores function with argument for outer function which will return inner
+x('param2');                    //argument for inner function
+
+//Note: All the scope that were available at the birthplace of the inner function are captured by the inner function and will be available inside the inner function till the inner function is available in memory
+//Now as we have returned it and stored it in a variable therefore inner function will be stored in the memory
+//This is called closure function ; it is nested ; all scopes are captured
+
+
+
+
