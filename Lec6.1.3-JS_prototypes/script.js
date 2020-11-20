@@ -56,13 +56,13 @@ console.log("========== prototypes ==========");
 //proto is hidden whereas Prototype is not an hidden field
 //__proto__ is a hidden pointer which point to the predefined prototypes in JS ; These prototypes are predefined in JS and everything is inherited from it
 //These functions are special as every proto is inherited from this special function prototypes
-console.log(obj.__proto__ == Object.prototype);     //true
-console.log(obj.__proto__ == Object.prototype);     //true
-console.log(str.__proto__ == String.prototype);     //true
-console.log(num.__proto__ == Number.prototype);     //true
-console.log(bool.__proto__ == Boolean.prototype);   //true
-console.log(arr.__proto__ == Array.prototype);      //true
-console.log(fun.__proto__ == Function.prototype);   //true
+console.log(obj.__proto__  ==  Object.prototype);     //true
+console.log(obj.__proto__  ==  Object.prototype);     //true
+console.log(str.__proto__  ==  String.prototype);     //true
+console.log(num.__proto__  ==  Number.prototype);     //true
+console.log(bool.__proto__ ==  Boolean.prototype);   //true
+console.log(arr.__proto__  ==  Array.prototype);      //true
+console.log(fun.__proto__  ==  Function.prototype);   //true
 
 console.log('typeof Object.create(Boolean.prototype):', typeof Object.create(Boolean.prototype));
 let x = Object.create(Boolean.prototype);
