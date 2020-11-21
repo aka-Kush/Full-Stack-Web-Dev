@@ -38,12 +38,9 @@ Array.prototype.joinOriginal = Array.prototype.join;
 
 Array.prototype.join = function (){
     console.log('join done on', this);
-    return this.joinOriginal(...arguments); /* The arguments object is useful for functions called with more arguments 
-    than they are formally declared to accept. '...arguments' is useful for functions that can be passed a variable number of arguments */
+    return this.joinOriginal(...arguments);
 }
 console.log(arr.join());
-//arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function
-
 /*
  * so what we did here is:
  * Array.prototype contains all array functions including join
