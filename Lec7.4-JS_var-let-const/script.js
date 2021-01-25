@@ -1,4 +1,10 @@
-// var and let works quite similar
+/**
+ ** var declarations are globally scoped or function scoped
+ ** let and const are block scoped
+ ** var variables can be updated and re-declared within its scope
+ ** let variables can be updated but not re-declared
+ ** const variables can neither be updated nor re-declared
+*/
 
 var a = 5;
 a++;
@@ -33,13 +39,6 @@ const arr = [1, 2, 3];
 arr.push(4);    //4 is added to the array
 console.log(arr);
 
-/**
- ** var declarations are globally scoped or function scoped
- ** let and const are block scoped
- ** var variables can be updated and re-declared within its scope
- ** let variables can be updated but not re-declared
- ** const variables can neither be updated nor re-declared
-*/
 
 
 //var declarations are globally scoped or function scoped
