@@ -1,5 +1,4 @@
 // setTimeout function executes function (first argument) only once after specified number of miliseconds (second argument) 
-
 function sayHello()
 {
     console.log("Hello");
@@ -8,23 +7,26 @@ console.log("Waiting...");
 setTimeout(sayHello, 1000);
 setTimeout(sayHello, 1000);
 
+
 // setInterval function keeps executing function (first argument) after specified number of miliseconds (second argument)
+function sayBye()
+{
+    console.log("Bye");
+}
+//setInterval(sayBye, 1000);  //one way
+setInterval(() => {     //another way
+    sayBye();
+}, 2000);
 
-// function sayBye()
-// {
-//     console.log("Bye");
-// }
-// //setInterval(sayBye, 1000);  //one way
-// setInterval(() => {     //another way
-//     sayBye();
-// }, 2000);
 
-// function sayHi()
-// {
-//     console.log("Hi");
-// }
-// let timeoutID = setTimeout(sayHi, 1000);
-// clearInterval(timeoutID);   // it is used to clear any existing interval ; it won't let anything print
+//clearInterval function
+function sayHi()
+{
+    console.log("Hi");
+}
+let timeoutID = setTimeout(sayHi, 1000);
+clearInterval(timeoutID);   // it is used to clear any existing interval ; it won't let anything print
+
 
 // running count loop till specified loop with clearInterval function
 var timeoutID;
