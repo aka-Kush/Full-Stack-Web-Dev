@@ -28,7 +28,7 @@ let timeoutID = setTimeout(sayHi, 1000);
 clearInterval(timeoutID);   // it is used to clear any existing interval ; it won't let anything print
 
 
-// running count loop till specified loop with clearInterval function
+// running count loop till specified loop number with clearInterval function
 var timeoutID;
 var runCount = 0;
 function greet()
