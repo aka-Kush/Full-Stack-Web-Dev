@@ -14,7 +14,7 @@ function sayBye()
     console.log("Bye");
 }
 //setInterval(sayBye, 1000);  //one way
-setInterval(() => {     //another way
+setInterval(() => {     //another way ; using anonymous function
     sayBye();
 }, 2000);
 
