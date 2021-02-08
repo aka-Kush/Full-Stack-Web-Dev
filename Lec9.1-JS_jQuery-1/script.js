@@ -6,19 +6,3 @@ console.log("$ == jQuery : ", $ == jQuery); //true
 console.log("select div by class: ", $('.div1')); //select div by class
 console.log("select div by id: ", $('#div2')); //select div by id
 $('.div1').html("This is Div 1"); //changing html for div with class div1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
