@@ -14,7 +14,7 @@ $(document).ready(function () {
     let page = 1;
 
     $('#fetch').click(() => {
-        $.get('https://reqres.in/api/users?page=${page}', (data) => {  //asynchronous get request ; it will return a callback
+        $.get(`https://reqres.in/api/users?page=${page}`, (data) => {  //asynchronous get request ; it will return a callback
             page++;  //loop which increments page whenever we click on fetch button
             for (let person of data.data) {
                 list.append(
